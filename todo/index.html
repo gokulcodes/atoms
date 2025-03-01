@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div>
+        <h1>Task Keeper</h1>
+
+        <div>
+            <h2>Groups</h2>
+
+            <div id="groups"></div>
+            
+            <button class="actionButton" popovertarget="group-create-popover" >
+                Create Group
+            </button>
+
+            <div popover class="create-popover" id="group-create-popover" >
+                Enter group details
+
+                <form onsubmit="return handleGroupCreation(event)" >
+                    <input type="text" placeholder="Group name" />
+                    <button  type="submit" >Create</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    
+    <script src="index.js" ></script>
+</body>
+</html>
