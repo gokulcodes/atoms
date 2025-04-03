@@ -18,3 +18,14 @@ This repository provides the foundational "atoms" that can be combined to create
 **Future Work:**
 
 Atoms will serve as the core building blocks for the Phraze UI component hub, a comprehensive library of accessible and performant UI components. Expect future updates with more components, enhanced features, and seamless integration with the Phraze ecosystem.
+
+**Folder Structure:**
+.
+├── App.jsx
+├── components
+│   ├── Autocomplete
+│   │   ├── autocomplete.scss
+│   │   ├── index.jsx
+│   │   └── README.md [Design]
+│   └── dropdown
+└── main.jsx
