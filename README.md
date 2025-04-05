@@ -10,12 +10,8 @@ A Suite of Foundational UI Components
 * **Accessibility First:** Built with accessibility in mind, ensuring a seamless experience for all users.
 * **Performance Optimized:** Lightweight and efficient components for optimal performance.
 * **Highly Customizable:** Easily adaptable to fit your specific design requirements.
-* **Future-Proof:** Designed to be part of the larger Phraze UI component hub.
+* **Documentation:** Each component has it's own Design documents, explanations and tradeoffs
 
-**Intended Use:**
+**Components**
 
-This repository provides the foundational "atoms" that can be combined to create complex UI patterns. These components are intended to be used as a base for building more sophisticated components and applications within the Phraze ecosystem.
-
-**Future Work:**
-
-Atoms will serve as the core building blocks for the Phraze UI component hub, a comprehensive library of accessible and performant UI components. Expect future updates with more components, enhanced features, and seamless integration with the Phraze ecosystem.
+1. [Autocomplete](https://github.com/gokulcodes/atoms/blob/main/src/components/Autocomplete/README.md)
