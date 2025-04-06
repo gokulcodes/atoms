@@ -8,14 +8,18 @@
     "build": "vite build",
     "preview": "vite preview",
     "prepare": "husky",
-    "test": "npx eslint ."
+    "lint": "npx eslint ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gokulcodes/atoms.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "uicomponents",
+    "atomic design",
+    "componenthub"
+  ],
+  "author": "Gokul Varadan",
   "type": "module",
   "license": "ISC",
   "bugs": {
