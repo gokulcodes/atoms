@@ -1,26 +1,23 @@
-import js from "@eslint/js";
-import react from "eslint-plugin-react";
 import { defineConfig } from "eslint/config";
+import globals from "globals";
+import js from "@eslint/js";
+import pluginReact from "eslint-plugin-react";
 
 export default defineConfig([
+  { files: ["**/*.{js,mjs,cjs,jsx}"] },
   {
-    files: ["**/*.{js,jsx,mjs,cjs,ts,tsx}"],
-    plugins: {
-      js,
-      react: react
-    },
-    languageOptions: {
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
-    // extends: ["plugin:react/recommended"],
+    files: ["**/*.{js,mjs,cjs,jsx}"],
+    languageOptions: { globals: globals.browser },
+  },
+  {
+    files: ["**/*.{js,mjs,cjs,jsx}"],
+    plugins: { js },
+    extends: ["js/recommended"],
+  },
+  pluginReact.configs.flat.recommended,
+  {
     rules: {
-      "react/jsx-uses-react": "error",
-      "react/jsx-uses-vars": "error",
-      "no-undef": "error"
+      "react/react-in-jsx-scope": "off",
     },
   },
 ]);

@@ -13,9 +13,9 @@
   "eslint.useFlatConfig": true,
   "eslint.workingDirectories": [{ "mode": "auto" }],
   "eslint.options": {
-    "overrideConfigFile": "./eslint.config.js"
+    "overrideConfigFile": "../eslint.config.js"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "always"
   }
 }

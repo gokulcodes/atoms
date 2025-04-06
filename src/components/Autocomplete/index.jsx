@@ -1,4 +1,4 @@
-import "./autocomplete.scss"
+// import "./autocomplete.scss"
 
 function Autocomplete(){
     return (
