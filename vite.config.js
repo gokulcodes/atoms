@@ -5,6 +5,9 @@ import path from "path";
 
 export default defineConfig({
   plugins: [reactPlugin, tailwindcss()],
+  build: {
+    assetsInlineLimit: 100000,
+  },
   resolve: {
     alias: {
       // eslint-disable-next-line no-undef

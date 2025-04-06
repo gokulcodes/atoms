@@ -37,9 +37,9 @@ Presentation Components:
     * Pull your LLD writeup from Github and parse it into this component
     * It should be capable for rendering Markdown in Github standard
 
-![Home](https://github.com/gokulcodes/atoms/blob/main/assets/home.png 'Home Architecture')
+![Home](https://github.com/gokulcodes/atoms/blob/main/public/home.png 'Home Architecture')
 
-![View](https://github.com/gokulcodes/atoms/blob/main/assets/view.png 'View Architecture')
+![View](https://github.com/gokulcodes/atoms/blob/main/public/view.png 'View Architecture')
 
 # Data Modal
 We have control the behaviour of the entire app in each screens. Everything is controlled by central data storage with context API

@@ -1,7 +1,7 @@
 import { StrictMode } from "react"
 import ReactDOM from 'react-dom/client' // used to interact with Real DOM for updating, deleting DOM nodes by compare the virtual DOM created by react package
-import App from "./src/pages/App"
-import "./styles/main.css"
+import App from "./pages/App"
+import "../styles/main.css"
 import { BrowserRouter, Route, Routes } from 'react-router'
 import Demo from '@/pages/Demo'
 

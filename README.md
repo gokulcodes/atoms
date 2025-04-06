@@ -1,4 +1,4 @@
-![Atoms poster](https://github.com/gokulcodes/atoms/blob/main/assets/poster.png 'Atoms poster')
+![Atoms poster](https://github.com/gokulcodes/atoms/blob/main/public/poster.png 'Atoms poster')
 # atoms
 A Suite of Foundational UI Components
 

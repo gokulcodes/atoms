@@ -15,7 +15,7 @@ function DemoView(props) {
         <div className={`w-full h-full flex flex-col gap-10 items-center justify-center ${fitToScreen ? "" : "mt-10"}`} >
             <div className={`flex ${fitToScreen ? "w-full" : "w-11/12 lg:w-8/12 rounded-4xl"} overflow-hidden items-center justify-center bg-gray-100 relative`} >
                 <button onClick={toggleFullScreen} className="absolute right-5 bottom-5 z-10 hover:bg-gray-100 dark:hover:bg-bodyBg-dark cursor-pointer p-2 rounded-full">
-                    <img className="w-8 h-auto dark:invert" src="../assets/icons/zoom.png" alt="github" />
+                    <img className="w-8 h-auto dark:invert" src="/icons/zoom.png" alt="github" />
                 </button>
                 <div className={`w-full ${fitToScreen ? "h-[100vh] " : "h-96 "} dark:bg-demoBg-dark bg-demoBg flex items-center justify-center `} >
                     {renderView}
