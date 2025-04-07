@@ -18,6 +18,7 @@ export default defineConfig([
   {
     rules: {
       "react/react-in-jsx-scope": "off",
+      "no-prototype-builtins": "off", // or "warn"
     },
   },
   {

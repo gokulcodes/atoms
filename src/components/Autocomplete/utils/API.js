@@ -2,7 +2,7 @@ import cache from "./cache";
 import { MAX_SEARCH_RESULTS } from "./config";
 
 async function getResults(query) {
-  if (cache.hasOwn(query)) {
+  if (cache.hasOwnProperty(query)) {
     return cache[query];
   }
   let url = `https://dummyjson.com/users/search?q=${query}`;
