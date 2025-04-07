@@ -5,6 +5,7 @@ export const initialState = {
   theme: "light",
   fitToScreen: false,
   components: allComponents,
+  selectedComponent: null,
 };
 
 export const reducer = (state, action) => {
@@ -13,6 +14,8 @@ export const reducer = (state, action) => {
       return { ...state, theme: action.payload }; // don't directly mutate the state, return a new object
     case "fitScreen":
       return { ...state, fitToScreen: !state.fitToScreen };
+    case "select_component":
+      return { ...state, selectedComponent: action.payload };
   }
 };
 

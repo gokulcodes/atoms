@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react"
 import Markdown from "react-markdown"
 import remarkGfm from 'remark-gfm'
 
-function DesignDocRenderer() {
+function DesignDocRenderer({readMeUrl}) {
     let [markDown, setMarkDown] = useState('')
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/Autocomplete/README.md')
+        fetch(readMeUrl)
             .then(async (res) => {
                 let content = await res.text()
                 setMarkDown(content)
@@ -19,6 +20,10 @@ function DesignDocRenderer() {
         </div>
     )
 
+}
+
+DesignDocRenderer.propTypes = {
+    readMeUrl: PropTypes.string
 }
 
 export default DesignDocRenderer

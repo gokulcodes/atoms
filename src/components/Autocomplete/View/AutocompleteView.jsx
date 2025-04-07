@@ -14,7 +14,7 @@ function AutocompleteView() {
 }
 
 function Input() {
-    const {  dispatch } = useContext(autoCompleteContext)
+    const { dispatch } = useContext(autoCompleteContext)
 
     async function handleQueryChange(event) {
         let query = event.target.value;
@@ -43,10 +43,12 @@ function Input() {
 
     return (
         <div className="flex flex-col gap-2">
-            <label className="ml-2 opacity-60 text-sm" htmlFor="atomSearch" >Autocomplete</label>
+            <label className="ml-2 dark:text-white opacity-60 text-sm" htmlFor="atomSearch" >Autocomplete</label>
             <input
                 id="atomSearch"
-                className="bg-white p-4 border border-gray-300 rounded-2xl focus:border-blue-200"
+                autoCorrect="off"
+                autoComplete="off"
+                className="dark:bg-cardBg-dark outline-0 dark:text-white bg-white p-4 border-2 dark:border-cardBg-dark border-gray-300 rounded-2xl focus:border-blue-400"
                 onChange={debouncedSearch} type="text" placeholder="Search anything"
             />
         </div>
@@ -54,15 +56,17 @@ function Input() {
 
 }
 
-function ResultItem({result}) {
+function ResultItem({ result, index }) {
+
+    let shouldAutoFocus = index == 0
     return (
-        <div className="w-full hover:bg-gray-100 cursor-pointer bg-white p-4 border-b border-gray-200 flex justify-between" >
+        <button autoFocus={shouldAutoFocus} className="w-full dark:hover:bg-bodyBg-dark hover:bg-gray-100 cursor-pointer dark:bg-cardBg-dark dark:text-white bg-white p-4 border-b dark:border-white/10 border-gray-200 flex justify-between" >
             <div className="flex flex-row gap-2">
                 <img loading="lazy" className="w-6 border border-bodyBg rounded-full" src={result.image} alt={result.firstName} />
                 <p>{result.firstName + " " + result.lastName} </p>
             </div>
             <p>{result.age }</p>
-        </div>
+        </button>
     )
 }
 
@@ -72,17 +76,21 @@ ResultItem.propTypes = {
         firstName: PropTypes.string,
         lastName: PropTypes.string,
         age: PropTypes.number,
-    })
+    }),
+    index: PropTypes.number
 }
 
 function Results() {
     const { results } = useContext(autoCompleteContext)
 
+    if (results && results.length === 0) {
+        return null
+    }
 
     return (
-        <div className="absolute top-24 w-full rounded-2xl overflow-hidden" >
-            {results?.map((result) => (
-                <ResultItem key={result.id} result={result} />
+        <div className="absolute top-24 w-full rounded-2xl max-h-96 overflow-y-scroll overscroll-none">
+            {results.map((result, index) => (
+                <ResultItem key={result.id} index={index} result={result} />
             ))}
         </div>
     )

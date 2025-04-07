@@ -5,6 +5,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [reactPlugin, tailwindcss()],
+  assetsInclude: ["**/*.md"],
   build: {
     assetsInlineLimit: 100000,
   },

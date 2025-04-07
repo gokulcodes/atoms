@@ -5,11 +5,10 @@ async function getResults(query) {
   if (cache.hasOwnProperty(query)) {
     return cache[query];
   }
-  let url = `https://dummyjson.com/users/search?q=${query}`;
+  let url = `https://dummyjson.com/users/search?q=${query}&limit=${MAX_SEARCH_RESULTS}`;
   let response = await fetch(url);
   let data = await response.json();
   let users = data.users;
-  users = users.slice(0, MAX_SEARCH_RESULTS);
   cache[query] = users;
   return cache[query];
 }
