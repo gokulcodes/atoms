@@ -1,8 +1,15 @@
+import { useReducer } from "react"
+import AutoCompleteContext, { initialState, reducer } from "./utils/AutocompleteContext"
+import AutocompleteView from "./View/AutocompleteView"
+
 // import "./autocomplete.scss"
 
-function Autocomplete(){
+function Autocomplete() {
+    const [state, dispatch] = useReducer(reducer, initialState)
     return (
-        <input type="text" placeholder="Search anything" />
+        <AutoCompleteContext.Provider value={{ ...state, dispatch }} >
+            <AutocompleteView />
+        </AutoCompleteContext.Provider>
     )
 }
 

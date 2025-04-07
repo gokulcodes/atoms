@@ -9,7 +9,6 @@ function DesignDocRenderer() {
         fetch('https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/Autocomplete/README.md')
             .then(async (res) => {
                 let content = await res.text()
-                console.log(content, res)
                 setMarkDown(content)
         })
     }, [])
