@@ -1,17 +1,25 @@
-import { createContext } from "react";
+/** @format */
+
+import { createContext } from 'react';
 
 export const initialState = {
-  query: "",
-  results: [],
+	query: '',
+	results: [],
 };
 
 export const reducer = (state, action) => {
-  switch (action.type) {
-    case "search":
-      return { ...state, query: action.payload }; // don't directly mutate the state, return a new object
-    case "results":
-      return { ...state, results: action.payload };
-  }
+	switch (action.type) {
+		case 'search':
+			return {
+				...state,
+				query: action.payload,
+			}; // don't directly mutate the state, return a new object
+		case 'results':
+			return {
+				...state,
+				results: action.payload,
+			};
+	}
 };
 
 let autoCompleteContext = createContext();

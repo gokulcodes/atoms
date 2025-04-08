@@ -1,4 +1,6 @@
-import { DEBOUNCE_DELAY } from "./components/Autocomplete/controller/config";
+/** @format */
+
+import { DEBOUNCE_DELAY } from './components/Autocomplete/controller/config';
 
 /**
  * Debounce a function to reduce frequent execution.
@@ -8,13 +10,13 @@ import { DEBOUNCE_DELAY } from "./components/Autocomplete/controller/config";
  */
 
 function debounce(func) {
-  let timerId = null;
-  return function (...args) {
-    clearTimeout(timerId);
-    timerId = setTimeout(() => {
-      func.apply(this, args); // this will preserved on debounce call.
-    }, DEBOUNCE_DELAY);
-  };
+	let timerId = null;
+	return function (...args) {
+		clearTimeout(timerId);
+		timerId = setTimeout(() => {
+			func.apply(this, args); // this will preserved on debounce call.
+		}, DEBOUNCE_DELAY);
+	};
 }
 
 export { debounce };

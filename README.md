@@ -1,4 +1,6 @@
-![Atoms poster](https://github.com/gokulcodes/atoms/blob/main/public/poster.png "Atoms poster")
+<!-- @format -->
+
+![Atoms poster](https://github.com/gokulcodes/atoms/blob/main/public/poster.png 'Atoms poster')
 
 # atoms
 

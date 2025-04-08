@@ -1,38 +1,40 @@
-@import "tailwindcss";
+/** @format */
+
+@import 'tailwindcss';
 
 * {
-  transition: all 0.4s ease;
+	transition: all 0.4s ease;
 }
 
 @theme {
-  --color-bodyBg: rgb(242, 242, 242);
-  --color-demoBg: rgb(229, 228, 228);
-  --color-cardBg: rgb(255, 255, 255);
-  --color-bodyBg-dark: rgb(25, 32, 30);
-  --color-demoBg-dark: rgb(19, 25, 24);
-  --color-cardBg-dark: rgb(37, 46, 44);
-  --font-sans: "Bricolage Grotesque", sans-serif;
-  --animate-openup: openup 0.5s ease-in-out;
-  @keyframes openup {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
+	--color-bodyBg: rgb(242, 242, 242);
+	--color-demoBg: rgb(229, 228, 228);
+	--color-cardBg: rgb(255, 255, 255);
+	--color-bodyBg-dark: rgb(25, 32, 30);
+	--color-demoBg-dark: rgb(19, 25, 24);
+	--color-cardBg-dark: rgb(37, 46, 44);
+	--font-sans: 'Bricolage Grotesque', sans-serif;
+	--animate-openup: openup 0.5s ease-in-out;
+	@keyframes openup {
+		0% {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
 }
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 body {
-  background-color: var(--color-bodyBg);
+	background-color: var(--color-bodyBg);
 }
 
-[data-theme="dark"] {
-  body {
-    background-color: var(--color-bodyBg-dark);
-  }
+[data-theme='dark'] {
+	body {
+		background-color: var(--color-bodyBg-dark);
+	}
 }

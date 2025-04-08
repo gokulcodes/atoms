@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Design Autocomplete
 
 Autocomplete is one of the famous components in frontend which uses different techniques to make searching easier and faster. Some popular techniques involves Trie Data structure for search operations, Debouncing to optimizing search
@@ -38,7 +40,7 @@ We can divide the components into four majors blocks:
 - Cache -> A simple inmemory cache, which holds all the results returned for specific keyword from the server
 - Network calls -> Let's use fetch to make API calls to remote server. In this example we'll use dummyJSON [https://dummyjson.com/users/search?q=John]
 
-![Autocomplete](https://github.com/gokulcodes/atoms/blob/main/src/components/Autocomplete/architecture.png "Autocomplete Architecture")
+![Autocomplete](https://github.com/gokulcodes/atoms/blob/main/src/components/Autocomplete/architecture.png 'Autocomplete Architecture')
 
 ## Data Modal:
 
@@ -69,8 +71,8 @@ CAP_RESULTS=false
 We'll use composition pattern to group key components together with unified data flow with context provider.
 
 - Autocomplete: It acts like a data provider between it's child components
-  - Autocomplete.Input
-  - Autocomplete.Results
+    - Autocomplete.Input
+    - Autocomplete.Results
 
 No need of props, as communication between components is glued together by context API
 

@@ -1,1 +1,3 @@
-export const GITHUB_LINK = "https://github.com/gokulcodes/atoms";
+/** @format */
+
+export const GITHUB_LINK = 'https://github.com/gokulcodes/atoms';

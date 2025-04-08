@@ -1,5 +1,4 @@
 /**
- *
  * Markdown Parser inspired from Github
  *
  * A line starts with single hashtag [#], create a new Heading with <h1 /> tag. Add a <a /> for supporting permalink link
@@ -22,4 +21,5 @@
  *
  * Line starts with ![alt](URL) symbol, create a image tag with URL attribute and add alt tag to it
  *
+ * @format
  */
