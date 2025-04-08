@@ -1,6 +1,6 @@
 import { useReducer } from "react"
 import AutoCompleteContext, { initialState, reducer } from "./controller/AutocompleteContext"
-import AutocompleteView from "./view/AutocompleteView"
+import AutocompleteView from "../Autocomplete/view/AutocompleteView"
 
 function Autocomplete() {
     const [state, dispatch] = useReducer(reducer, initialState)
