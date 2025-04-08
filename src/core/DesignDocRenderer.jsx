@@ -15,7 +15,7 @@ function DesignDocRenderer({readMeUrl}) {
     }, [])
 
     return (
-        <div className={`flex flex-col w-11/12 lg:w-8/12 items-start justify-center relative`} >
+        <div className={`flex flex-col w-11/12 lg:w-8/12 items-start justify-center relative animate-openup`} >
             <Markdown remarkPlugins={[remarkGfm]} >{markDown}</Markdown>
         </div>
     )

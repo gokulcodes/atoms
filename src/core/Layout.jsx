@@ -5,6 +5,7 @@ import Header from "./Header"
 
 function Layout( {children} ){
     const [state, dispatch] = useReducer(reducer, initialState);
+    
     return (
         <AtomContext.Provider value={{ ...state, dispatch }}>
             <Header />

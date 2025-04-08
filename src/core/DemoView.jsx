@@ -19,7 +19,7 @@ function DemoView(props) {
                 <button onClick={toggleFullScreen} className="absolute right-5 bottom-5 z-10 hover:bg-gray-100 dark:hover:bg-bodyBg-dark cursor-pointer p-2 rounded-full">
                     <img className="w-8 h-auto dark:invert" src="/icons/zoom.png" alt="github" />
                 </button>
-                <div className={`w-full ${fitToScreen ? "h-[100vh] " : "h-[60vh]"} dark:bg-demoBg-dark bg-demoBg flex items-center justify-center `} >
+                <div className={`w-full ${fitToScreen ? "h-[100vh] " : "h-[60vh]"} animate-openup dark:bg-demoBg-dark bg-demoBg flex items-center justify-center `} >
                     {renderView}
                 </div>
             </div>

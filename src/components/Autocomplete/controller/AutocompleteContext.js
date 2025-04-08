@@ -13,5 +13,6 @@ export const reducer = (state, action) => {
       return { ...state, results: action.payload };
   }
 };
+
 let autoCompleteContext = createContext();
 export default autoCompleteContext;

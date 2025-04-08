@@ -1,6 +1,6 @@
 import DemoView from "@/core/DemoView";
 import Layout from "@/core/Layout";
-import renderComponent from "@/utils";
+import getComponent from "@/componentDictionary";
 import { useParams } from "react-router";
 
 function Demo() {
@@ -8,7 +8,7 @@ function Demo() {
 
     return (
         <Layout>
-            <DemoView renderView={renderComponent(params.id)} />
+            <DemoView renderView={getComponent(params.id)} />
         </Layout>
     )
 }

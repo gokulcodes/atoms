@@ -1,6 +1,6 @@
 function Dropdown() {
     return (
-        <div>Google</div>
+        <div>Dropdown</div>
     )
 }
 

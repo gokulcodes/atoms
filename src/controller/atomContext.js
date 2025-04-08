@@ -1,10 +1,8 @@
 import { createContext } from "react";
-import { allComponents } from "./config";
 
 export const initialState = {
   theme: "light",
   fitToScreen: false,
-  components: allComponents,
   selectedComponent: null,
 };
 
