@@ -1,7 +1,5 @@
 function Dropdown() {
-    return (
-        <div>Dropdown</div>
-    )
+  return <div>Dropdown</div>;
 }
 
-export default Dropdown
+export default Dropdown;

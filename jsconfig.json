@@ -1,11 +1,11 @@
 {
-    "compilerOptions": {
-      "baseUrl": "src",
-      "paths": {
-        "@/*": ["./*"]
-      },
-      "moduleResolution": "node",
-      "jsx": "react-jsx"
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"]
     },
-    "include": ["src", "src/main.jsx"]
-  }
+    "moduleResolution": "node",
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "src/main.jsx"]
+}

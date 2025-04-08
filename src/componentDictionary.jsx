@@ -15,14 +15,14 @@ export const allComponents = [
     component: <Dropdown />,
     readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/Dropdown/README.md`,
     previewImage: "https://dummyimage.com/16:9x1080",
-  }
+  },
 ];
 
 export default function getComponent(name) {
-  let componentByName = allComponents.find((component) => name == component.id)
-  
+  let componentByName = allComponents.find((component) => name == component.id);
+
   if (componentByName && componentByName.component) {
-    return componentByName.component
+    return componentByName.component;
   }
 
   return null;
