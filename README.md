@@ -19,3 +19,4 @@ A Suite of Foundational UI Components
 **Components**
 
 1. [Autocomplete](https://github.com/gokulcodes/atoms/blob/main/src/components/Autocomplete/README.md)
+2. [Dropdown](https://github.com/gokulcodes/atoms/blob/main/src/components/Dropdown/README.md)
