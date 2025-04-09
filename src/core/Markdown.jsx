@@ -21,5 +21,6 @@
  *
  * Line starts with ![alt](URL) symbol, create a image tag with URL attribute and add alt tag to it
  *
+ * <! > Create a comment node for commented markdown
  * @format
  */

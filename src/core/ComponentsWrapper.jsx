@@ -1,6 +1,6 @@
 /** @format */
 
-import { allComponents } from '@/componentDictionary';
+import { allComponents } from '@/core/ComponentDictionary';
 import ComponentCard from './ComponentCard';
 
 function ComponentsWrapper() {

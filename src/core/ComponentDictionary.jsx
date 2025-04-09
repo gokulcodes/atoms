@@ -1,7 +1,7 @@
 /** @format */
 
-import Autocomplete from './components/Autocomplete';
-import Dropdown from './components/Dropdown';
+import Autocomplete from '../components/Autocomplete';
+import Dropdown from '../components/Dropdown';
 
 export const allComponents = [
 	{
