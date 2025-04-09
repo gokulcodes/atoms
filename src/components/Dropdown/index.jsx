@@ -7,15 +7,17 @@ function Dropdown() {
 		<DropdownMenu isInitiallyOpen={true}>
 			<DropdownMenu.Button>Atoms Dropdown</DropdownMenu.Button>
 			<DropdownMenu.List>
-				<DropdownMenu.Item>File</DropdownMenu.Item>
-				<DropdownMenu.Item>Explore</DropdownMenu.Item>
-				<DropdownMenu.Item>Folder</DropdownMenu.Item>
-				<DropdownMenu.Item>View</DropdownMenu.Item>
-				<DropdownMenu.Item>Tools</DropdownMenu.Item>
+				<DropdownMenu.SubList title="Companies">
+					<DropdownMenu.Item>Google</DropdownMenu.Item>
+					<DropdownMenu.Item>Meta</DropdownMenu.Item>
+				</DropdownMenu.SubList>
 				<DropdownMenu.Item>Build</DropdownMenu.Item>
-				<DropdownMenu.Item>
-					Build Items at long spaceses
-				</DropdownMenu.Item>
+				<DropdownMenu.SubList title="All tools">
+					<DropdownMenu.Item>Explore</DropdownMenu.Item>
+					<DropdownMenu.Item>Folder</DropdownMenu.Item>
+					<DropdownMenu.Item>Tools</DropdownMenu.Item>
+					<DropdownMenu.Item>Build</DropdownMenu.Item>
+				</DropdownMenu.SubList>
 			</DropdownMenu.List>
 		</DropdownMenu>
 	);

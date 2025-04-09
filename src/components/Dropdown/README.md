@@ -44,6 +44,11 @@ We'll use composition model to develop the entire dropdown component. Data bindi
 - DropdownMenu.Item
     - onClick - Function to trigger on item click
     - disabled - true / false
+- DropdownMenu.SubList
+    - title - string
+    - children - SubListItems component
+- DropdownMenu.SubList.SubListItems
+    - onClick - function to trigger on item click
 
 ## Optimization
 

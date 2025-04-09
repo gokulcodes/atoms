@@ -7,6 +7,7 @@ import Button from './Button';
 import Item from './Item';
 import List from './List';
 import PropTypes from 'prop-types';
+import SubList from './SubList';
 
 function DropdownMenu({ children, isInitiallyOpen }) {
 	const [state, dispatch] = useReducer(reducer, initialState);
@@ -17,9 +18,9 @@ function DropdownMenu({ children, isInitiallyOpen }) {
 				className="relative"
 				id="dropdownMenu"
 			>
-				{children.map((children) => (
-					<Fragment key={children.type.name}>
-						{cloneElement(children, { isInitiallyOpen })}
+				{children.map((child, index) => (
+					<Fragment key={index}>
+						{cloneElement(child, { isInitiallyOpen })}
 					</Fragment>
 				))}
 			</div>
@@ -35,5 +36,6 @@ DropdownMenu.propTypes = {
 DropdownMenu.Button = Button;
 DropdownMenu.List = List;
 DropdownMenu.Item = Item;
+DropdownMenu.SubList = SubList;
 
 export default DropdownMenu;
