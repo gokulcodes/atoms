@@ -6,11 +6,11 @@ import Footer from './Footer';
 import Body from './Body';
 function Modal({ children, handleClose, isOpen }) {
 	useEffect(() => {
-		document.body.style.overflow = 'hidden';
+		if (isOpen) document.body.style.overflow = 'hidden';
 		return () => {
 			document.body.style.overflow = 'auto';
 		};
-	}, []);
+	}, [isOpen]);
 
 	const handleBackdropClose = useCallback((e) => {
 		if (e.target.id === 'modal-backdrop') {

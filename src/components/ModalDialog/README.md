@@ -23,7 +23,7 @@ Let's use composition modal to group all components with shared context
 
 # Data Modal:
 
-Since, it's just a view component, States are handled externally. 
+Since, it's just a view component, States are handled externally.
 
 # Interface Definition:
 
