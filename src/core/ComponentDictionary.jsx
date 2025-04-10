@@ -1,5 +1,6 @@
 /** @format */
 
+import Modal from '@/components/ModalDialog';
 import Autocomplete from '../components/Autocomplete';
 import Dropdown from '../components/Dropdown';
 
@@ -9,14 +10,18 @@ export const allComponents = [
 		name: 'Autocomplete',
 		component: <Autocomplete />,
 		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/Autocomplete/README.md`,
-		previewImage: 'https://dummyimage.com/16:9x1080',
 	},
 	{
 		id: 'dropdown',
 		name: 'Dropdown',
 		component: <Dropdown />,
 		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/Dropdown/README.md`,
-		previewImage: 'https://dummyimage.com/16:9x1080',
+	},
+	{
+		id: 'modal',
+		name: 'Modal',
+		component: <Modal />,
+		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/ModalDialog/README.md`,
 	},
 ];
 
