@@ -4,6 +4,7 @@ import Modal from '@/components/ModalDialog';
 import Autocomplete from '../components/Autocomplete';
 import Dropdown from '../components/Dropdown';
 import CarouselView from '@/components/Carousel';
+import PollView from '@/components/PollWidget/Index';
 
 export const allComponents = [
 	{
@@ -29,6 +30,12 @@ export const allComponents = [
 		name: 'Carousel',
 		component: <CarouselView />,
 		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/Carousel/README.md`,
+	},
+	{
+		id: 'pollwidget',
+		name: 'Poll Widget',
+		component: <PollView />,
+		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/PollWidget/README.md`,
 	},
 ];
 

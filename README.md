@@ -22,3 +22,4 @@ A Suite of Foundational UI Components
 2. [Dropdown](https://github.com/gokulcodes/atoms/blob/main/src/components/Dropdown/README.md)
 3. [Modal](https://github.com/gokulcodes/atoms/blob/main/src/components/ModalDialog/README.md)
 4. [Carousel](https://github.com/gokulcodes/atoms/blob/main/src/components/Carousel/README.md)
+5. [Poll Widget](https://github.com/gokulcodes/atoms/blob/main/src/components/PollWidget/README.md)
