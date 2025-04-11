@@ -3,6 +3,7 @@
 import Modal from '@/components/ModalDialog';
 import Autocomplete from '../components/Autocomplete';
 import Dropdown from '../components/Dropdown';
+import CarouselView from '@/components/Carousel';
 
 export const allComponents = [
 	{
@@ -22,6 +23,12 @@ export const allComponents = [
 		name: 'Modal',
 		component: <Modal />,
 		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/ModalDialog/README.md`,
+	},
+	{
+		id: 'carousel',
+		name: 'Carousel',
+		component: <CarouselView />,
+		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/Carousel/README.md`,
 	},
 ];
 
