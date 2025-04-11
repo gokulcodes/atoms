@@ -4,13 +4,14 @@ import PropTypes from 'prop-types';
 
 function Controls({ ref, autoPlay, delay }) {
 	const { currentActiveSlide, dispatch } = useContext(carouselContext);
-	let totalSlides = ref.current.children.length;
 	function handlePreviousButton() {
+		let totalSlides = ref?.current?.children.length;
 		let newIndex = (currentActiveSlide + totalSlides - 1) % totalSlides;
 		dispatch({ type: 'setSlide', payload: newIndex });
 	}
 
 	function handleNextButton() {
+		let totalSlides = ref?.current?.children.length;
 		let newIndex = (currentActiveSlide + totalSlides + 1) % totalSlides;
 		dispatch({ type: 'setSlide', payload: newIndex });
 	}

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 function ProgressDots({ ref }) {
 	const { currentActiveSlide, dispatch } = useContext(carouselContext);
-	let totalSlides = ref.current.children.length;
+	let totalSlides = ref?.current?.children.length;
 
 	function handleProgressJump(index) {
 		dispatch({ type: 'setSlide', payload: index });

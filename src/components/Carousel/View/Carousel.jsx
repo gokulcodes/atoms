@@ -16,17 +16,17 @@ function Carousel({ children, autoPlay, delay }) {
 		<CarouselContext.Provider value={{ ...state, dispatch }}>
 			<div className="w-full flex items-center justify-center">
 				<div className="w-[600px] h-[600px] flex items-center justify-center overflow-hidden relative rounded-4xl">
-					<Controls
-						autoPlay={autoPlay}
-						delay={delay}
-						ref={carouselRef}
-					/>
 					<div
 						ref={carouselRef}
 						className="flex overflow-hidden"
 					>
 						{children}
 					</div>
+					<Controls
+						autoPlay={autoPlay}
+						delay={delay}
+						ref={carouselRef}
+					/>
 					<ProgressDots ref={carouselRef} />
 				</div>
 			</div>
