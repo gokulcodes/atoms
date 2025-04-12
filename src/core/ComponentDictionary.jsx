@@ -6,6 +6,7 @@ import Dropdown from '../components/Dropdown';
 import CarouselView from '@/components/Carousel';
 import PollView from '@/components/PollWidget/Index';
 import Accordian from '@/components/Accordian';
+import Markdown from '@/components/Markdown';
 
 export const allComponents = [
 	{
@@ -43,6 +44,12 @@ export const allComponents = [
 		name: 'Accordian',
 		component: <Accordian />,
 		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/Accordian/README.md`,
+	},
+	{
+		id: 'markdown',
+		name: 'Markdown Parser',
+		component: <Markdown />,
+		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/Markdown/README.md`,
 	},
 ];
 

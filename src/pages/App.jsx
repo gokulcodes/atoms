@@ -1,5 +1,4 @@
 /** @format */
-
 import ComponentsWrapper from '../core/ComponentsWrapper';
 import Layout from '@/core/Layout';
 

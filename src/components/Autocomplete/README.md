@@ -40,7 +40,7 @@ We can divide the components into four majors blocks:
 - Cache -> A simple inmemory cache, which holds all the results returned for specific keyword from the server
 - Network calls -> Let's use fetch to make API calls to remote server. In this example we'll use dummyJSON [https://dummyjson.com/users/search?q=John]
 
-![Autocomplete](https://github.com/gokulcodes/atoms/blob/main/src/components/Autocomplete/architecture.png 'Autocomplete Architecture')
+![Autocomplete](https://github.com/gokulcodes/atoms/blob/main/src/components/Autocomplete/architecture.png?raw=true)
 
 ## Data Modal:
 
