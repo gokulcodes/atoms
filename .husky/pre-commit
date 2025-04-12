@@ -1,2 +1,3 @@
 npm run prettify
+git add .
 npm run lint
