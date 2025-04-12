@@ -23,3 +23,4 @@ A Suite of Foundational UI Components
 3. [Modal](https://github.com/gokulcodes/atoms/blob/main/src/components/ModalDialog/README.md)
 4. [Carousel](https://github.com/gokulcodes/atoms/blob/main/src/components/Carousel/README.md)
 5. [Poll Widget](https://github.com/gokulcodes/atoms/blob/main/src/components/PollWidget/README.md)
+5. [Accordian](https://github.com/gokulcodes/atoms/blob/main/src/components/Accordian/README.md)

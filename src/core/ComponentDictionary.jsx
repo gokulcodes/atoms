@@ -5,6 +5,7 @@ import Autocomplete from '../components/Autocomplete';
 import Dropdown from '../components/Dropdown';
 import CarouselView from '@/components/Carousel';
 import PollView from '@/components/PollWidget/Index';
+import Accordian from '@/components/Accordian';
 
 export const allComponents = [
 	{
@@ -36,6 +37,12 @@ export const allComponents = [
 		name: 'Poll Widget',
 		component: <PollView />,
 		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/PollWidget/README.md`,
+	},
+	{
+		id: 'accordian',
+		name: 'Accordian',
+		component: <Accordian />,
+		readMeUrl: `https://raw.githubusercontent.com/gokulcodes/atoms/refs/heads/main/src/components/Accordian/README.md`,
 	},
 ];
 
